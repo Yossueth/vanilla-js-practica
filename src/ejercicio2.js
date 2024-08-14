@@ -1,7 +1,16 @@
-class Contador {
-  // Inserte el código aquí
+class contador {
+  constructor(counter) {
+    this.counter = counter
+  }
+
+  incrementar(){
+    this.counter++
+    return `Contador ${this.counter}  `
+  }
 }
 
-// Inserte el código aquí
+const total = new contador(0)
 
-export { instancia }
+console.log(total.incrementar());
+
+// export { instancia };
